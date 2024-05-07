@@ -1,0 +1,258 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*BAGIAN NAVBAR*/
+.navbar {
+    background: #ffff;
+    height: 100px;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(1, 1, 1, 0.1);
+}
+
+.navbar>h1 {
+    font-size: 38px;
+    color: #E62F2A;
+    font-weight: bolder;
+}
+
+nav ul {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a:hover {
+    transition: 0.5s ease;
+    color: #E62F2A;
+    transition: 0.3s;
+}
+
+nav ul li a {
+    color: #252525;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #252525;
+}
+
+p {
+    color: #5c5a5a;
+}
+
+.courses-box {
+    background-color: #ffff;
+    margin: 0 10%;
+    margin-top: 35px;
+    padding: 0 20px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details {
+    flex: 1;
+    text-align: center;
+}
+
+.details>span {
+    font-size: 12px;
+}
+
+.details h1 {
+    width: 100%;
+    height: 350px;
+    padding: 0;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.details p {
+    font-size: 14px;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.details > h5 {
+    font-size: 16px;
+}
+
+.unduh {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin-left: -441px;
+    padding: 0;
+    width: 100%;
+}
+
+a.tbl-unduh {
+    background: #E62F2A;
+    border-radius: 15px;
+    padding: 15px 30px 15px 30px;
+    color: #ffff;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight:500;
+}
+
+.from-to{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin-left: 135px;
+    margin-right: 135px;
+    gap: 103px;
+    padding: 0;
+}
+
+.kotak-tgl{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin-left: 135px;
+    padding: 0;
+    width: 100%;
+}
+
+input[type='date'] {
+    height: 50px;
+    width: 15%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin-right: 50px;
+    padding: 0;
+}
+
+.acc{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+a.tbl-acc {
+    background: #E62F2A;
+    border-radius: 15px;
+    padding: 15px 30px 15px 30px;
+    color: #ffff;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight:500;
+    margin-right: 10px ;
+    margin-left: -30px;
+}
+
+a.tbl-cancel {
+    background: #E62F2A;
+    border-radius: 15px;
+    padding: 15px 30px 15px 30px;
+    color: #ffff;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight:500;
+}
+
+/*FOOTER*/
+.footer-final {
+    margin-top: 100px;
+    height: 80px;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    justify-content:center;
+    background: #e2e2e2;
+}
+
+footer>div {
+    display: flex;
+    gap: 30px;
+}
+
+footer p{
+    color: black;
+}
+
+@media only screen and (max-width: 480px){
+
+    .courses-box{
+        flex-wrap: wrap;
+        width: 72%;
+        grid-template-columns: 1fr;
+    }
+
+    .courses-box > img{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .courses-box h1{
+        font-size: 16px;
+    }
+
+    .courses-box p{
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    nav.navbar {
+        flex-wrap: wrap;
+        height: 100%;
+        font-size: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li{
+        flex-wrap: wrap;
+        height: 100%;
+        font-size: 11px;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer-final {
+        flex-wrap: wrap;
+        height: 100%;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+}

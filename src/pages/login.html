@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+            <link rel=" shortcut icon" href="../../public/assets/Group.svg" type="img/x-icon">
+            
+            <title>Form Login</title>
+            
+            <link rel="stylesheet" href="../styles/style-login.css">
+        
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        </head>
+        
+    <body>
+            <div class="login">
+                <h1>LOGIN</h1>
+                <img src="../../public/assets/Security-pana.svg">
+                
+                <form action="./dashboard.html">
+                
+                    <div class="form-input">
+                        <input type="text" id="username" required>
+                        <span></span>
+                        <label><b>Username</b></label>
+                    </div>
+
+                    <div class="form-input">
+                        <input type="password" id="password" required>
+                        <span></span>
+                        <label><b>Password</b></label>
+                    </div>
+                    <input type="submit" name="login" value="LOGIN" onclick="Login()">
+                </form>
+                <a href="../../public/index.html"><p>Kembali</p></a>
+            </div>
+
+            <script language="JavaScript">
+                function Login(){ 
+                    var user = document.getElementById("username").value;
+                    var pass = document.getElementById("password").value;
+        
+                    if (user=="admin" && pass=="123"){
+                        alert("Selamat anda berhasil login");
+                    }else{
+                        alert("Username dan password anda salah!");
+                    }
+                }
+            </script>
+</body>
+</html>
