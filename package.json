@@ -6,7 +6,9 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "body-parser": "^1.20.2",
     "bootstrap": "^3.4.1",
+    "morgan": "^1.10.0",
     "node-notifier": "^10.0.1",
     "pg": "^8.11.5",
     "react": "^18.2.0",
@@ -40,6 +42,7 @@
   },
   "description": "Repository ini merupakan proyek kolaboratif antara Universitas Pamulang dan BRIN (Badan Riset dan Inovasi Nasional) yang bertujuan untuk mengembangkan teknologi sensor air. Proyek ini dipimpin oleh Daffa Dhiya Ulhaq, Teguh Satrio, dan Achdiyat Ilyasa Samudra, para mahasiswa dan peneliti yang berdedikasi.",
   "main": "index.js",
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC"
