@@ -1,5 +1,6 @@
-const express = require('express');
-const axios = require('axios');
+import express from 'express';
+import axios from 'axios';
+
 const app = express();
 
 const GOOGLE_MAPS_API_KEY = 'GOOGLE_MAPS_API_KEY';
